@@ -28,8 +28,8 @@ const timeFormat = (time: number): number => {
 const App: React.FC<IState> = () => {
 
   const [time, setTime] = useState(timeFormat(25));
-  const [sessionLength, setSessionLength] = useState(0.2);
-  const [breakLength, setBreakLength] = useState(0.2);
+  const [sessionLength, setSessionLength] = useState(25);
+  const [breakLength, setBreakLength] = useState(25);
   const [mode, setMode] = useState('session');
   const [isActive, setIsActive] = useState(false);
   const [isSessionPassed, setIsSessionPassed] = useState(false);
